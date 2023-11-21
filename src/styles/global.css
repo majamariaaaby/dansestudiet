@@ -17,61 +17,74 @@
   --black: #000000;
   --grey: #313131;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 h1 {
   font-size: 350px;
   font-family: Danse-Display;
+  color: var(--white);
 }
 
 h2 {
   font-size: 50px;
   font-family: Danse-Display;
+  color: var(--black);
 }
 
 h3 {
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  color: var(--black);
 }
 
 h4 {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
+  color: var(--black);
 }
 
 p {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  color: var(--black);
 }
 
 @media (max-width: 600px) {
   h1 {
     font-size: 90px;
     font-family: Danse-Display;
+    color: var(--white);
   }
 
   h2 {
     font-size: 26px;
     font-family: Danse-Display;
+    color: var(--black);
   }
 
   h3 {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
+    color: var(--black);
   }
 
   h4 {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    color: var(--black);
   }
 
   p {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
+    color: var(--black);
   }
 }
