@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
+@font-face {
+  font-family: Danse-Display;
+  src: url("/fonts/DansestudietDisplay1-Bold.otf");
+}
+
+@font-face {
+  font-family: Danse-Simple;
+  src: url("/fonts/DansestudietSimple-Bold.otf");
+}
+
+:root {
+  --blue-500: #196572;
+  --blue-100: #c8dadd;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #313131;
+}
+
+h1 {
+  font-size: 350px;
+  font-family: Danse-Display;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: Danse-Display;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 90px;
+    font-family: Danse-Display;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-family: Danse-Display;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+  }
+}
