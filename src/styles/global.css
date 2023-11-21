@@ -37,14 +37,14 @@ h3 {
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: var(--black);
+  color: var(--grey);
 }
 
 h4 {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: var(--black);
+  color: var(--blue-100);
 }
 
 p {
@@ -71,14 +71,14 @@ p {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    color: var(--black);
+    color: var(--grey);
   }
 
   h4 {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: var(--black);
+    color: var(--blue-100);
   }
 
   p {
