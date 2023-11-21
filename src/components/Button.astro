@@ -1,18 +1,21 @@
 ---
 const { title } = Astro.props;
 ---
-<div>
-<a>{title}</a>
+<div class="flex">
+    <a>{title}</a>
 </div>
 
 <style>
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
 a{
     color: var(--white);
     font-family: Danse-Simple;
     font-size: 24px;
-    display: flex;
     padding: 10px 20px;
-    justify-content: center;
     gap: 10px;
     background: var(--blue-500);
 }
