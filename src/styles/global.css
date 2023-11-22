@@ -24,8 +24,10 @@
 }
 * {
   margin: 0;
+  margin-inline: auto;
   padding: 0;
 }
+
 h1 {
   font-size: 350px;
   font-family: Danse-Display;
