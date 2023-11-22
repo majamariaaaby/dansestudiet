@@ -10,14 +10,79 @@ import Testimonials from "../components/Testimonials.astro";
 ---
 
 <BaseLayout>
-  <Nav></Nav>
+  <Nav />
   <main>
     <Hero />
-    <Indhold/>
-    <Nyhed/>
-    <Indhold/>
-    <Testimonials/>
+    <Indhold />
+    <section class="nyheder">
+      <h2>nyheder</h2>
+      <div class="nyheder_con">
+        <Nyhed
+          headline="Månedens Workshop"
+          text="Glæd dig til en ekstraordinær workshop denne december! Anna Zacho's afholder en workshop inden for Commercial Dance. Dette enestående arrangement finder sted den 10. december fra kl. 14:00 til 16:00. Tilmeld dig allerede i dag."
+          img="../assets/maanedensworkshop.webp"
+          btext="tilmeld hold"
+        />
+        <Nyhed
+          headline="Movement lab"
+          text="Deltag nu i Vittoria Lasorella’s unikke Movement Lab. Med en kombination af teknik, og udtryk vil du blive guidet af Vittoria og hendes ekspertise for at udforske nye bevægelser inden for dans. Movement Lab finder sted 4-5 februar, begge dage fra kl. 13-16."
+          img="../assets/movementlab.webp"
+          btext="book plads"
+        />
+      </div>
+    </section>
+    <Indhold />
+    <section class="testimonials">
+      <h2>det siger andre</h2>
+      <div class="testimonials_con">
+        <Testimonials
+          name="Mette, 66 år"
+          text="”Jeg har kommet her i mere end 20 år. Jeg kommer her flere gange om ugen, og essensen er at jeg er glad når jeg kommer, og jeg er glad når jeg går.”"
+          img="../assets/mette.webp"
+        />
+        <Testimonials
+          name="Elvin, 16 år"
+          text="”Jeg er blevet så meget gladere efter jeg er begyndt at danse. Jeg føler mig helt vildt tryg, og alle er bare så søde, og jeg elsker at der bare ikke er noget konkurrence.”"
+          img="../assets/elvin.webp"
+        />
+        <Testimonials
+          name="Johanne, 28 år"
+          text="”Jeg startede til dans for ni måneder siden, fordi jeg savnede en måde at udtrykke mig på. Nu fylder dans bare hele mit liv, jeg er hernede 7 timer om ugen.”"
+          img="../assets/johanne.webp"
+        />
+      </div>
+    </section>
     <Button title="tilmeld hold" />
   </main>
   <Footer />
 </BaseLayout>
+
+<style>
+  /* ******** NYHEDER ******** */
+  .nyheder_con {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+
+  @media (max-width: 600px) {
+    .nyheder_con {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  /* ******** TESTIMONIALS ******** */
+
+  .testimonials_con {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+  }
+  @media (max-width: 600px) {
+    .testimonials_con {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>

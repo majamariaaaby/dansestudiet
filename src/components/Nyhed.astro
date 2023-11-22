@@ -1,0 +1,38 @@
+---
+import Button from "./Button.astro";
+const { headline, text, img, btext } = Astro.props;
+---
+
+<div class="con">
+  <img src={img} alt="" />
+  <h3>{headline}</h3>
+  <p>{text}</p>
+  <div class="right">
+    <Button title={btext} />
+  </div>
+</div>
+
+<style>
+  .con {
+    display: flex;
+    flex-direction: column;
+    max-width: 546px;
+    max-height: 585px;
+  }
+
+  .right {
+    justify-content: end;
+    display: flex;
+  }
+
+  .con p {
+    height: 135px;
+  }
+
+  @media (max-width: 600px) {
+    .right {
+      justify-content: center;
+      display: block;
+    }
+  }
+</style>
