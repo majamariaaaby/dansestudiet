@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: Danse-Display-light;
-  src: url("/fonts/DansestudietDisplay1-Bold.otf");
+  font-family: Danse-Simple-light;
+  src: url("/fonts/DansestudietSimple.otf");
 }
 
 @font-face {
@@ -65,7 +65,9 @@ a {
 h5 {
   font-size: 20px;
   font-family: Danse-Simple-light;
-  color: var(--white);
+  color: var(--blue-100);
+  font-weight: lighter;
+  text-transform: uppercase;
 }
 
 @media (max-width: 600px) {

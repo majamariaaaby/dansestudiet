@@ -38,7 +38,7 @@ import "../styles/global.css";
     <div class="kontakt">
       <h4>Kontakt</h4>
       <p><a href="mailto:Info@dansestudiet.dk">E-mail: Info@dansestudiet.dk</a></p>
-      <p><a href="tel:+40102229">Telefon: 40 10 22 29</a></p>
+      <p><a href="tel:+40102229">Telefon: 40 10 22 29</a></p><br>
       <p>CVR-nummer: 41 18 687</p>
     </div>
     <div class="lokation">
@@ -52,9 +52,9 @@ import "../styles/global.css";
   <div class="container_icons">
     <div class="logo_footer">
       <a href="index"><img src="../assets/logo.svg" alt="link til facebook"></a>
-      <h5>DANSESTUDIET</h5>
+      <h5>Dansestudiet</h5>
     </div>
-    <div>
+    <div class="link_icons">
     <a href="https://www.facebook.com/dansestudiet/"><img src="../assets/facebook.svg" alt="link til facebook"></a>
     <a href="https://www.instagram.com/dansestudietaarhus/"><img src="../assets/instagram.svg" alt="link til instagram"></a>
     <a href="https://www.youtube.com/channel/UCUhTtsxE9xQOeiYtkX7MiIA"><img src="../assets/youtube.svg" alt="link til youtube"></a>
@@ -62,11 +62,12 @@ import "../styles/global.css";
     </div>
   </div>
 
- </div>
+ </div> 
   
     <style>
+      /*-----generel style-----*/
       p, address, li, a {
-        color: var(--white);
+        color: var(--blue-100);
   }
       .container {
         background-color: var(--black);
@@ -78,6 +79,7 @@ import "../styles/global.css";
       
       h4 {
         padding-bottom: 20px;
+        text-transform: uppercase;
       }
 
       a {
@@ -89,6 +91,8 @@ import "../styles/global.css";
       li {
         list-style: none;
       }
+
+      /*------ info -----*/
     
       .tider {
         display: flex;
@@ -97,23 +101,47 @@ import "../styles/global.css";
       }
       .info {
         gap: 40px;
-        background-color:blue;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         
       }
-      .container_icons, .logo_footer {
-        justify-self: center;
-      }
-      @media (max-width: 600px) {
-        .info {
+      /*-------- icons ------*/
+      .container_icons {
         display: flex;
         flex-direction: column;
-        
-        background-color:brown;
+        justify-self: center;
+        gap: 20px;
+        padding-top: 50px;
+
       }
-  
+      .logo_footer {
+        display: flex;
+        flex-direction: column;
+      }
+      .logo_footer a, .logo_footer h5 {
+        align-self: center;
+      }
+
+      .link_icons {
+        display: flex;
+        gap: 10px;
+
+      }
+
+      /*----mobil format ----*/
+
+      @media (max-width: 800px) {
+        .info {
+        display: flex;
+        flex-direction: column;        
+      }
+
+      .aabningstider, .kontakt, .lokation {
+        width: 220px;
+        align-self: center;
+      }
+
       }
 
       
