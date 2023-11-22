@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: Danse-Display-light;
+  src: url("/fonts/DansestudietDisplay1-Bold.otf");
+}
+
+@font-face {
   font-family: Danse-Simple;
   src: url("/fonts/DansestudietSimple-Bold.otf");
 }
@@ -47,17 +52,26 @@ h4 {
   color: var(--blue-100);
 }
 
-p {
+p,
+address,
+li,
+a {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: var(--black);
 }
 
+h5 {
+  font-size: 20px;
+  font-family: Danse-Simple-light;
+  color: var(--white);
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 90px;
-    font-family: Danse-Display;
+    font-family: Danse-Simple;
     color: var(--white);
   }
 
@@ -81,7 +95,10 @@ p {
     color: var(--blue-100);
   }
 
-  p {
+  p,
+  address,
+  li,
+  a {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;

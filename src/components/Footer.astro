@@ -4,143 +4,119 @@ import "../styles/global.css";
 
 
 <footer>
- <div></div>
+ <div class="container">
+  <div class="info">
+    <div class="aabningstider">
+      <h4>Åbningstider</h4>
+      <div class="tider">
+      <div class="dag">
+        <ol>
+          <li>Mandag</li>
+          <li>Tirsdag</li>
+          <li>Onsdag</li>
+          <li>Torsdag</li>
+          <li>Fredag</li>
+          <li>Lørdag</li>
+          <li>Søndag</li>
+        </ol>
+
+      </div>
+      <div class="tid">
+        <ol>
+          <li>09:00 - 21:00</li>
+          <li>09:00 - 21:00</li>
+          <li>16:00 - 21:00</li>
+          <li>08:00 - 17:30</li>
+          <li>08:00 - 17:30</li>
+          <li>10:00 - 11:00</li>
+          <li>Lukket</li>
+        </ol>
+
+      </div>
+    </div>
+    </div>
+    <div class="kontakt">
+      <h4>Kontakt</h4>
+      <p><a href="mailto:Info@dansestudiet.dk">E-mail: Info@dansestudiet.dk</a></p>
+      <p><a href="tel:+40102229">Telefon: 40 10 22 29</a></p>
+      <p>CVR-nummer: 41 18 687</p>
+    </div>
+    <div class="lokation">
+      <h4>Lokation</h4>
+      <address>Dansestudiet Aarhus<br>
+        Bissensgade 14 B<br>
+        8000 Århus C</address>
+      </div>
+
+  </div>
+  <div class="container_icons">
+    <div class="logo_footer">
+      <a href="index"><img src="../assets/logo.svg" alt="link til facebook"></a>
+      <h5>DANSESTUDIET</h5>
+    </div>
+    <div>
+    <a href="https://www.facebook.com/dansestudiet/"><img src="../assets/facebook.svg" alt="link til facebook"></a>
+    <a href="https://www.instagram.com/dansestudietaarhus/"><img src="../assets/instagram.svg" alt="link til instagram"></a>
+    <a href="https://www.youtube.com/channel/UCUhTtsxE9xQOeiYtkX7MiIA"><img src="../assets/youtube.svg" alt="link til youtube"></a>
+    <a href="https://www.google.com/maps/place/Dansestudiet/@56.1552899,10.1967772,15z/data=!4m5!3m4!1s0x0:0x386d07f042c20429!8m2!3d56.1551916!4d10.196833"><img src="../assets/maps.svg" alt="link til google maps"></a>
+    </div>
+  </div>
+
+ </div>
   
     <style>
-      .footer_line {
-        aspect-ratio: 1423/66;
-        width: 100%;
-        height: 100%;
+      p, address, li, a {
+        color: var(--white);
+  }
+      .container {
+        background-color: var(--black);
+        padding: 20px;
+        display: grid;
+        grid-template-columns: fit-content;
+        
       }
-      footer {
-        margin-top: 20px;
+      
+      h4 {
+        padding-bottom: 20px;
       }
-      .textalign_center {
-        text-align: center;
-      }
-      .grid_tilmeld_mail {
-        text-align: center;
-      }
-  
-      .åbningstider_margin {
-        margin-top: 40px;
-        text-align: center;
-      }
-      .some_logo {
-        aspect-ratio: 1/1;
-        width: 10%;
-        height: 10%;
-        display: inline;
-      }
-      h2 {
-        margin-bottom: 10px;
-        margin-top: 50px;
-      }
-      .footer_knap {
-        margin-top: 63px;
-        grid-column: 2/3;
-        grid-row: 2/3;
-      }
-      .footer_man_size {
-        aspect-ratio: 851/976;
-        width: 80%;
-        margin: auto;
-        margin-top: 60px;
-        height: 80%;
-      }
+
       a {
         text-decoration: none;
-        color: var(--blue);
+      }
+      address {
+        font-style:initial;
+      }
+      li {
+        list-style: none;
+      }
+    
+      .tider {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .info {
+        gap: 40px;
+        background-color:blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+      }
+      .container_icons, .logo_footer {
+        justify-self: center;
+      }
+      @media (max-width: 600px) {
+        .info {
+        display: flex;
+        flex-direction: column;
+        
+        background-color:brown;
       }
   
-      /*********** INPUT ***********/
-      input {
-        border: none;
-        height: 30px;
-        font-family: "brandon-grotesque", sans-serif;
-        font-size: 1.3rem;
-        color: var(--blue);
-        background-color: var(--background_light);
-        margin-top: 20px;
-        margin-left: -103px;
       }
-  
-      hr {
-        width: 63%;
-        margin-left: 88px;
-      }
-      input:focus {
-        outline: none;
-      }
-  
-      input::placeholder {
-        color: var(--blue);
-        font-family: "Montserrat", sans-serif;
-        font-size: 1rem;
-      }
-      /*********** MEDIA QUERY ***********/
-      @media (min-width: 1100px) {
-        /*********** GRID ***********/
-        .grid_footer {
-          display: grid;
-          grid-template-columns: 1fr 1fr 3fr 1fr;
-          margin-left: 10px;
-        }
-        .textalign_center {
-          text-align: left;
-          margin-left: 40px;
-        }
-        .textalign_center h2 {
-          text-align: left;
-        }
-        .grid_tilmeld_mail {
-          display: grid;
-          grid-template-columns: 3fr 1fr;
-          grid-template-rows: 1fr 2fr;
-          margin-left: 40px;
-          gap: 20px;
-          padding-left: 70px;
-        }
-        .grid_tilmeld_mail h2 {
-          float: left;
-          grid-column: 1/2;
-          grid-row: 1/2;
-        }
-        .footer_knap {
-          margin-top: 0;
-        }
-        .input {
-          grid-column: 1/2;
-          grid-row: 2/3;
-        }
-        /*********** SIZE ***********/
-  
-        .some_logo {
-          aspect-ratio: 1/1;
-          width: 15%;
-          height: 15%;
-          display: inline;
-        }
-        .åbningstider_margin,
-        .tilmeld_margin {
-          margin-top: 0;
-        }
-        .footer_man_size {
-          width: 100%;
-          float: right;
-        }
-        .grid_tilmeld_mail {
-          text-align: left;
-        }
-  
-        input {
-          margin-left: 0;
-        }
-        hr {
-          width: 90%;
-          margin-left: 0;
-        }
-      }
+
+      
     </style>
   </footer>
   
