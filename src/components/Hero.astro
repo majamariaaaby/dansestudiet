@@ -26,8 +26,6 @@ const { btext } = Astro.props;
 
   .overskrift {
     line-height: 80%;
-    top: 10%;
-    /* margin: auto; */
   }
   .button {
     display: flex;
@@ -41,6 +39,7 @@ const { btext } = Astro.props;
     margin-top: 40px;
     position: absolute;
     flex-direction: column;
+    gap: 30px;
   }
   h1 {
     font-size: 20vmax;
@@ -49,7 +48,7 @@ const { btext } = Astro.props;
   .con {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-around;
   }
 
   @media (max-width: 600px) {
