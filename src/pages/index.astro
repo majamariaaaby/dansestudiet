@@ -20,6 +20,7 @@ import Testimonials from "../components/Testimonials.astro";
       text2="Du kan deltage i workshops, tage en 1-årig danseuddannelse, se vores elevers forestillinger, du kan leje vores lokaler, eller få et skræddersyet arrangement for din virksomhed."
       variant="video"
       videoSrc="../assets/dansevid.mp4"
+      hide_image="not_visible"
     />
     <section class="nyheder">
       <h2>nyheder</h2>
@@ -46,6 +47,7 @@ import Testimonials from "../components/Testimonials.astro";
       variant="img"
       image="./assets/undervisere.webp"
       alt="vores undervisere"
+      hide_video="not_visible"
     />
     <section class="testimonials">
       <h2>det siger andre</h2>
@@ -71,7 +73,7 @@ import Testimonials from "../components/Testimonials.astro";
     margin-top: 42px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .nyheder_con {
       display: flex;
       flex-direction: column;
@@ -85,7 +87,7 @@ import Testimonials from "../components/Testimonials.astro";
     justify-content: space-between;
     margin-top: 42px;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .testimonials_con {
       display: flex;
       flex-direction: column;
