@@ -68,9 +68,11 @@ import Testimonials from "../components/Testimonials.astro";
 <style>
   /* ******** NYHEDER ******** */
   .nyheder_con {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+    
   }
 
   @media (max-width: 800px) {
@@ -83,9 +85,10 @@ import Testimonials from "../components/Testimonials.astro";
   /* ******** TESTIMONIALS ******** */
 
   .testimonials_con {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 42px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
   }
   @media (max-width: 800px) {
     .testimonials_con {

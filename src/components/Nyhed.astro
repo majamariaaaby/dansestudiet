@@ -1,10 +1,10 @@
 ---
 import Button from "./Button.astro";
-const { headline, text, img, btext } = Astro.props;
+const { headline, text, img, btext, alt } = Astro.props;
 ---
 
 <div class="con">
-  <img src={img} alt="" />
+  <img src={img} alt={alt} />
   <h3>{headline}</h3>
   <p>{text}</p>
   <div class="right">
@@ -27,6 +27,9 @@ const { headline, text, img, btext } = Astro.props;
 
   .con p {
     height: 135px;
+  }
+  img {
+    width: 100%;
   }
 
   @media (max-width: 800px) {
