@@ -52,13 +52,21 @@ import Testimonials from "../components/Testimonials.astro";
     <section class="testimonials">
       <h2>det siger andre</h2>
       <div class="testimonials_con">
-        <Testimonials name="Mette, 66 år" text="”Jeg har kommet her i mere end 20 år. Jeg kommer her flere gange om ugen, og essensen er at jeg er glad når jeg kommer, og jeg er glad når jeg går.”" img="../assets/mette.webp" />
+        <Testimonials
+          name="Mette, 66 år"
+          text="”Jeg har kommet her i mere end 20 år. Jeg kommer her flere gange om ugen, og essensen er at jeg er glad når jeg kommer, og jeg er glad når jeg går.”"
+          img="../assets/mette.webp"
+        />
         <Testimonials
           name="Elvin, 16 år"
           text="”Jeg er blevet så meget gladere efter jeg er begyndt at danse. Jeg føler mig helt vildt tryg, og alle er bare så søde, og jeg elsker at der bare ikke er noget konkurrence.”"
           img="../assets/elvin.webp"
         />
-        <Testimonials name="Johanne, 28 år" text="”Jeg startede til dans for ni måneder siden, fordi jeg savnede en måde at udtrykke mig på. Nu fylder dans bare hele mit liv, jeg er hernede 7 timer om ugen.”" img="../assets/johanne.webp" />
+        <Testimonials
+          name="Johanne, 28 år"
+          text="”Jeg startede til dans for ni måneder siden, fordi jeg savnede en måde at udtrykke mig på. Nu fylder dans bare hele mit liv, jeg er hernede 7 timer om ugen.”"
+          img="../assets/johanne.webp"
+        />
       </div>
     </section>
   </main>
@@ -72,14 +80,12 @@ import Testimonials from "../components/Testimonials.astro";
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     gap: 20px;
-    
   }
 
   @media (max-width: 800px) {
     .nyheder_con {
       display: flex;
       flex-direction: column;
-      
     }
   }
 
