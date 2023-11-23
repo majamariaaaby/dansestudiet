@@ -6,7 +6,7 @@ const isVideo = variant === 'video';
 ---
 
 <section class={class_variant}>
-    <div class="tekst_container">
+    <div class="text_container">
         <h2>{headline}</h2>
         <p>{text1}</p>
         <p>{text2}</p>
@@ -45,13 +45,23 @@ const isVideo = variant === 'video';
 
     .knap_container {
         display: flex;
-        justify-content:flex-start;
+        justify-content:flex-end;
     }
 
-    .tekst_container, img {
+    .text_container {
         background-color: var(--blue-100);
-        max-width: 50%;
+        max-width: 40%;
     }
+    .text_container :last-child {
+        display: flex;
+        justify-content:last baseline;
+    }
+
+    img {
+        max-width: 700px;
+    }
+
+
     </style>
 
 

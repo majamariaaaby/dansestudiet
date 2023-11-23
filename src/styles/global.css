@@ -24,8 +24,12 @@
 }
 * {
   margin: 0;
-  margin-inline: auto;
   padding: 0;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 1200px;
 }
 
 h1 {
