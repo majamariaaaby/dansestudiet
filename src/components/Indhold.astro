@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Button from "./Button.astro";
-const { image, alt, headline, class_variant, text1, text2, variant, videoSrc } = Astro.props;
+const { image, alt, headline, class_variant, text1, text2, variant, videoSrc, hide_video, hide_image } = Astro.props;
 const isVideo = variant === 'video';
 ---
 
@@ -15,15 +15,16 @@ const isVideo = variant === 'video';
         </div>
     </div>
     <div class="container_video">
-        {isVideo ? (
+        <div class={hide_video}>
             <video width="100%" controls>
                 <source src={videoSrc} type="video/mp4">
                 <source src={videoSrc} type="video/ogg">
                 Your browser does not support the video tag.
             </video>
-        ) : (
-            <img src={image} alt={alt}>
-        )}
+        </div>
+            <div class={hide_image}>
+           <img src={image} alt={alt}>
+        </div>
     </div>
 </section>
 
@@ -49,17 +50,24 @@ const isVideo = variant === 'video';
     }
 
     .text_container {
+        display: flex;
+        flex-direction: column;
         background-color: var(--blue-100);
         max-width: 40%;
+        justify-content: end;
+        gap: 20px;
     }
-    .text_container :last-child {
-        display: flex;
-        justify-content:last baseline;
+  
+    img {
+        width: 100%;
+        max-width: 700px;
+        
     }
 
-    img {
-        max-width: 700px;
+    .not_visible {
+        display: none;
     }
+
 
 
 
