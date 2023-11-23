@@ -79,6 +79,7 @@ import Testimonials from "../components/Testimonials.astro";
     .nyheder_con {
       display: flex;
       flex-direction: column;
+      
     }
   }
 
@@ -86,7 +87,7 @@ import Testimonials from "../components/Testimonials.astro";
 
   .testimonials_con {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
     gap: 20px;
   }

@@ -1,18 +1,18 @@
 ---
-const { name, text, img } = Astro.props;
+const { name, text, img, alt } = Astro.props;
 ---
 
 <div class="con">
-  <img src={img} alt="" />
+  <img src={img} alt={alt} />
   <div class="text_container">
   <h3>{name}</h3>
   <p><i>{text}</i></p>
 </div>
 </div>
 <style>
-  .con {
-    max-width: 340px;
-    margin-inline: auto;
+ 
+  img {
+    width: 100%;
   }
 
   @media (max-width: 800px) {
