@@ -6,10 +6,12 @@ const isVideo = variant === 'video';
 ---
 
 <section class={class_variant}>
-    <div class="text_container">
+    <div class="container">
+        <div class="text_container">
         <h2>{headline}</h2>
         <p>{text1}</p>
         <p>{text2}</p>
+    </div>
         <div class="knap_container">
         <Button title="tilmeld hold" />
         </div>
@@ -48,11 +50,11 @@ const isVideo = variant === 'video';
         justify-content:flex-end;
     }
 
-    .text_container {
+    .container {
         display: flex;
         flex-direction: column;
         max-width: 40%;
-        justify-content: end;
+        justify-content: space-between;
         gap: 10px;
     }
   
