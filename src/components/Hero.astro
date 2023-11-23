@@ -14,19 +14,21 @@ import "../styles/global.css";
     background-size: cover;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   .overskrift {
     text-align: center;
     margin-top: 40px;
-
-    /* line-height: 80%; */
+    position: absolute;
+    line-height: 80%;
+    top: 15%;
     /* margin: auto; */
   }
   @media (max-width: 600px) {
     section {
       height: 100vh;
-      width: 320vh;
+
       background-image: url("../assets/hero.webp");
       background-size: cover;
       background-position: center;
