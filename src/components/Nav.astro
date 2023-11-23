@@ -1,0 +1,108 @@
+---
+import Menu from "./Menu.astro";
+---
+
+<header class="sticky">
+  <div>
+    <div class="column1">
+      <a href="/">
+        <img class="logo" src="../assets/logo.svg" alt="logo" />
+      </a>
+    </div>
+    <div class="column3">
+      <div class="burger">
+        <Menu />
+      </div>
+      <div class="menu">
+        <a href="/UNDERVISERE">UNDERVISERE</a>
+        <a href="/TILMELDING">TILMELDING</a>
+        <a href="/PRAKTISK">PRAKTISK</a>
+        <a href="/KONTAKT">KONTAKT</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    position: fixed;
+    height: 80px;
+    background-color: transparent;
+    transition: background-color 0.7s ease;
+  }
+
+  .sticky {
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: background-color 0.7s ease;
+  }
+
+  .sticky a {
+    transition: color 0.7s ease;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: var(--blue-100);
+  }
+
+  .column1 {
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+  img {
+    max-width: 170px;
+    transition: filter 0.3s ease;
+  }
+
+  .column3 {
+    max-width: 100%;
+    align-items: right;
+    position: fixed;
+    right: 6%;
+    margin-top: 25px;
+  }
+
+  span {
+    transition: filter 0.3s ease;
+    background: var(--black);
+  }
+  .menu {
+    display: none;
+  }
+  /* DESKTOP */
+  @media (min-width: 800px) {
+    header {
+      height: 100px;
+    }
+
+    .burger {
+      display: none;
+    }
+    img {
+      max-width: 220px;
+    }
+
+    .menu {
+      display: flex;
+      padding-right: 0;
+      padding-top: 15px;
+    }
+
+    a {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 20px;
+      text-decoration: none;
+      padding-left: 36px;
+      transition: color 0.3s ease;
+      text-transform: uppercase;
+    }
+  }
+</style>
