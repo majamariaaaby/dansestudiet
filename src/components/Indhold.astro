@@ -16,7 +16,7 @@ const isVideo = variant === 'video';
     </div>
     <div class="container_video">
         {isVideo ? (
-            <video controls>
+            <video width="100%" controls>
                 <source src={videoSrc} type="video/mp4">
                 <source src={videoSrc} type="video/ogg">
                 Your browser does not support the video tag.
@@ -60,6 +60,7 @@ const isVideo = variant === 'video';
     img {
         max-width: 700px;
     }
+
 
 
     </style>
