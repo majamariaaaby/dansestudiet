@@ -76,6 +76,15 @@ h5 {
   font-weight: lighter;
   text-transform: uppercase;
 }
+@media (max-width: 800px) {
+  main {
+    margin-inline: auto;
+    padding: 5%;
+    max-width: 500px;
+    
+  }
+
+}
 
 @media (max-width: 600px) {
   h1 {
