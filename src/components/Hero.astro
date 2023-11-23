@@ -1,10 +1,21 @@
 ---
 import "../styles/global.css";
+import Button from "./Button.astro";
+const { headline, text, img, btext } = Astro.props;
 ---
 
 <section>
   <h1 class="overskrift">Danse<br />studiet</h1>
 </section>
+
+<div class="con">
+  <img src={img} alt="" />
+  <h3>{headline}</h3>
+  <p>{text}</p>
+  <div class="right">
+    <Button title={btext} />
+  </div>
+</div>
 
 <style>
   section {
