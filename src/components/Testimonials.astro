@@ -4,17 +4,36 @@ const { name, text, img } = Astro.props;
 
 <div class="con">
   <img src={img} alt="" />
+  <div class="text_container">
   <h3>{name}</h3>
   <p><i>{text}</i></p>
+</div>
 </div>
 <style>
   .con {
     width: 340px;
+    margin-inline: auto;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     h3 {
       text-align: center;
+    }
+
+    .con {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 50px;
+      box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    }
+    .text_container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 20px 20px 20px;
+
     }
   }
 </style>

@@ -68,7 +68,17 @@ const isVideo = variant === 'video';
         display: none;
     }
 
+    @media (max-width: 800px) {
+        .intro_container, .undervisere_container {
+            flex-direction: column-reverse;
+        }
 
+        .text_container {
+
+        max-width: 100%;
+    }
+
+    }
 
 
     </style>
