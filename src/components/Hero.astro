@@ -5,9 +5,12 @@ const { btext } = Astro.props;
 ---
 
 <section class="con">
-  <h1 class="overskrift">Danse<br />studiet</h1>
-
-  <Button title={btext} color="" />
+  <div class="wrap">
+    <h1 class="overskrift">Danse<br />studiet</h1>
+    <div class="button">
+      <Button title={btext} color="white" />
+    </div>
+  </div>
 </section>
 
 <style>
@@ -17,19 +20,28 @@ const { btext } = Astro.props;
     max-width: 100%;
     background-image: url("../assets/hero.webp");
     background-size: cover;
-    background-position: center;
+    background-position: center 10%;
     align-items: center;
   }
 
   .overskrift {
-    text-align: center;
-    margin-top: 40px;
-    position: absolute;
     line-height: 80%;
     top: 10%;
     /* margin: auto; */
   }
+  .button {
+    display: flex;
+    justify-content: center;
+    padding-block: 20px;
+  }
 
+  .wrap {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    flex-direction: column;
+  }
   h1 {
     font-size: 20vmax;
   }

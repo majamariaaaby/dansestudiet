@@ -26,7 +26,7 @@ import Menu from "./Menu.astro";
 <style>
   header {
     position: fixed;
-    height: 80px;
+    height: 56px;
     background-color: transparent;
     transition: background-color 0.7s ease;
   }
@@ -42,7 +42,7 @@ import Menu from "./Menu.astro";
 
   .sticky a {
     transition: color 0.7s ease;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     color: var(--blue-100);
@@ -53,7 +53,7 @@ import Menu from "./Menu.astro";
     text-align: left;
     margin: 0;
     position: fixed;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 25px;
   }
   img {
@@ -66,7 +66,7 @@ import Menu from "./Menu.astro";
     align-items: right;
     position: fixed;
     right: 6%;
-    margin-top: 25px;
+    margin-top: 13px;
   }
 
   span {
@@ -79,7 +79,7 @@ import Menu from "./Menu.astro";
   /* DESKTOP */
   @media (min-width: 800px) {
     header {
-      height: 100px;
+      height: 56px;
     }
 
     .burger {
@@ -92,11 +92,10 @@ import Menu from "./Menu.astro";
     .menu {
       display: flex;
       padding-right: 0;
-      padding-top: 15px;
     }
 
     a {
-      color: var(--white);
+      color: var(--blue-100);
       font-weight: 600;
       font-size: 20px;
       text-decoration: none;
